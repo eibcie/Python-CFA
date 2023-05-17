@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+import webbrowser
+name=str(input("Please enter your name:"))
+print("\nHai!",name,",Welcome to guessing music game.")
+print("\nGuess a genre music!")
+
+def main():
+ print(" complete!")
+webbrowser.open("https://music.youtube.com/watch?v=-f0MQzVMuUE&feature=share")
+answer = "kpop"
+guess= None
+
+while answer != guess:
+    guess = str(input("Guess the music genre (small capital letter): "))
+
+    if guess == answer :
+       print("You are genius!")
+    else:
+       print("Please retry!")
+     
+main()
